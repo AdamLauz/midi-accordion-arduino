@@ -1,7 +1,7 @@
 # midi-accordion-arduino
 Add midi support to acoustic accordion
 
-Accordions are usually made as acoustical instruments. It generates air pressure which makes internal metal reeds to vaibrate and produce sound. Some companies produce digital accordions or add electronics to an acoustic accordion in order to produce digital sounds similarly to digital keyboards. A common way to do this is to use physical sensors connected to a digital converter to convert signals from the sensors to MIDI messages that are in turn fed into a sound module to produce sounds. 
+Accordions are usually made as acoustical instruments. They generates air pressure which makes internal metal reeds to vaibrate and produce sound. Some companies produce digital accordions or add electronics to an acoustic accordion in order to produce digital sounds similarly to digital keyboards. A common way to do this is to use physical sensors connected to a digital converter to convert signals from the sensors to MIDI messages that are in turn fed into a sound module to produce sounds. 
 The goal of this project is to transform an acoustic accordion to produce digital sounds. 
 
 To achieve this I used the following components:

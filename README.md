@@ -1,4 +1,4 @@
-# midi-accordion-arduino
+![Screenshot 2023-09-24 232715](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/f4799aa8-9edc-4258-8c2a-a313313e99ea)# midi-accordion-arduino
 Add midi support to acoustic accordion
 
 Introduction
@@ -10,5 +10,11 @@ The goal of this project is to make an acoustic accordion to produce digital sou
 4. Electronic Board (hold and connect the sensors).
 5. PC (operated as a sound module)
 
+
+![Screenshot 2023-09-24 232715](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/6fc6f0f1-ede1-47ce-afe4-ec00670c1c9f)
+
+![Screenshot 2023-09-24 232602](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/3cbc1a69-f123-491e-ab92-fc65c2d3a5c7)
+
+![Screenshot 2023-09-24 232444](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/d6f23090-eaee-47b7-9529-96ccfbc28c76)
 
 

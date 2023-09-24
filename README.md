@@ -1,4 +1,4 @@
-![Screenshot 2023-09-24 232715](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/f4799aa8-9edc-4258-8c2a-a313313e99ea)# midi-accordion-arduino
+# midi-accordion-arduino
 Add midi support to acoustic accordion
 
 Introduction

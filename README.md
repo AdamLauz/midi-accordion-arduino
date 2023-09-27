@@ -1,4 +1,4 @@
-# midi-accordion-arduino
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/c05ecf50-b74e-471e-b0f7-036faf2d679d)# midi-accordion-arduino
 Add midi support to acoustic accordion
 
 Accordions are usually made as acoustical instruments. They generate air pressure which makes internal metal reeds to vaibrate and produce sound. Some companies produce digital accordions or add electronics to an acoustic accordion in order to produce digital sounds similarly to digital keyboards. A common way to do this is to use physical sensors connected to a digital converter to convert signals from the sensors to MIDI messages that are in turn fed into a sound module to produce sounds. 
@@ -11,6 +11,9 @@ To achieve this I used the following components:
 3. 3 X 16 channel analogdigital multiplexers (CD74HC4067)  
 4. Electronic Matrix board (hold and connect the sensors).
 5. PC (operated as a sound module)
+
+## Diagram
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/d865fcbd-199e-4894-ba15-5409a9702363)
 
 
 ![Screenshot 2023-09-24 232715](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/6fc6f0f1-ede1-47ce-afe4-ec00670c1c9f)

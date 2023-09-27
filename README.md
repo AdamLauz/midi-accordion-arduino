@@ -6,9 +6,9 @@ The goal of this project is to transform an acoustic accordion to produce digita
 
 To achieve this I used the following components:
 
-1. Sensors: 40 hall effects and 40 tiny magnets
+1. Sensors: 40 hall effects (49E analog) and 40 tiny magnets
 2. Arduino uno + Usb cable
-3. 3 of 16 channel analog multiplexers  
+3. 3 of 16 channel analogdigital multiplexers (CD74HC4067)  
 4. Electronic Board (hold and connect the sensors).
 5. PC (operated as a sound module)
 

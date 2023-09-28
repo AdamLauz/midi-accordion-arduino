@@ -19,6 +19,9 @@ To achieve this I used the following components:
 
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/5e2e6842-3f7a-490d-898c-293167406caf)
 
+## How key press is captured?
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/ef4312c2-cfd3-40a3-ba5d-7bec7b19ba32)
+
 
 ## Pictures
 ![Screenshot 2023-09-24 232715](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/6fc6f0f1-ede1-47ce-afe4-ec00670c1c9f)

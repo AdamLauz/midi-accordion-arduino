@@ -11,10 +11,16 @@ To achieve this I used the following components:
 4. Electronic Matrix board (hold and connect the sensors).
 5. PC (operated as a sound module)
 
-## Diagram
+## High level Diagram
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/d865fcbd-199e-4894-ba15-5409a9702363)
 
+## Detailed Diagram
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/e240dba7-c56c-4c04-926d-645c288f62e6)
 
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/aa1d296e-14dc-4c84-95ec-3c46eccfb3af)
+
+
+## Pictures
 ![Screenshot 2023-09-24 232715](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/6fc6f0f1-ede1-47ce-afe4-ec00670c1c9f)
 
 ![Screenshot 2023-09-24 232602](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/3cbc1a69-f123-491e-ab92-fc65c2d3a5c7)

@@ -17,7 +17,7 @@ To achieve this I used the following components:
 ## Detailed Diagram
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/e240dba7-c56c-4c04-926d-645c288f62e6)
 
-![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/aa1d296e-14dc-4c84-95ec-3c46eccfb3af)
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/5e2e6842-3f7a-490d-898c-293167406caf)
 
 
 ## Pictures

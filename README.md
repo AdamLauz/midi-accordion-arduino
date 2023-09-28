@@ -17,7 +17,7 @@ To achieve this I used the following components:
 ## Detailed Diagram
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/e240dba7-c56c-4c04-926d-645c288f62e6)
 
-![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/5e2e6842-3f7a-490d-898c-293167406caf)
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/bd13a7b5-b2c5-4770-aa57-bf71b5b0081e)
 
 ## How key press is captured?
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/ef4312c2-cfd3-40a3-ba5d-7bec7b19ba32)

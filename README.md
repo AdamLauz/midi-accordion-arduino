@@ -15,13 +15,7 @@ d. An electronic matrix board to securely hold and interconnect the sensors.
 e. A personal computer (PC) utilized as a sound module to process and produce the desired audio output.
 
 ## Video Demo
-[[([https://www.youtube.com/watch?v=Hc79sDi3f0U](https://youtu.be/Xd6MMoPNxCA?si=6vpV0rM6OJRO2Qn8) "Midi for Accordion with Arduino - Demo")](https://www.youtube.com/watch?v=Hc79sDi3f0U](https://youtu.be/Xd6MMoPNxCA?si=6vpV0rM6OJRO2Qn8)
-
-[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg)](https://www.youtube.com/embed/<VIDEO_ID>)
-
-[<img src="https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/<VIDEO_ID>)](https://www.youtube.com/watch?v=Hc79sDi3f0U](https://youtu.be/Xd6MMoPNxCA?si=6vpV0rM6OJRO2Qn8)
-
+https://www.youtube.com/watch?v=Xd6MMoPNxCA
 
 ## High level Architecture
 The core of this system is centered around the Arduino Uno microcontroller, the sixteen-channel multiplexer, and the Hall effect sensors, as illustrated in the following Figure:

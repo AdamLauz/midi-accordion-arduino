@@ -15,7 +15,7 @@ d. An electronic matrix board to securely hold and interconnect the sensors.
 e. A personal computer (PC) utilized as a sound module to process and produce the desired audio output.
 
 ## Video Demo
-[<img src="https://img.youtube.com/vi/Xd6MMoPNxCA/hqdefault.jpg" width="600" height="300"
+[<img src="https://img.youtube.com/vi/Xd6MMoPNxCA/hqdefault.jpg" width="600" height="400"
 />](https://www.youtube.com/embed/Xd6MMoPNxCA)
 
 ## High level Architecture

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accordion MIDI Transformation</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        /* CSS for Music AI elements */
+        /* CSS Styles */
+        body {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* ... (Rest of your CSS styles here) ... */
+
+        /* Music AI Elements */
         #music-ai-elements {
             position: fixed;
             top: 0;
@@ -20,7 +26,7 @@
 
         #music-ai-elements img {
             position: absolute;
-            opacity: 0.3;
+            opacity: 0.6;
             animation: float 5s ease-in-out infinite;
         }
 
@@ -34,89 +40,57 @@
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <h1>Accordion MIDI Transformation</h1>
-        <p>Your Journey to Musical Innovation</p>
-    </header>
+    <div class="header-section">
+        <!-- ... (Rest of your HTML content here) ... -->
+    </div>
 
-    <section id="intro">
-        <h2>Step 1: Introduction</h2>
-        <p>Embrace the fusion of tradition and technology as we embark on a musical adventure. Discover how an ordinary acoustic accordion becomes a digital symphony.</p>
-    </section>
+    <div id="about">
+        <!-- ... (Rest of your HTML content here) ... -->
+    </div>
 
-    <section id="overview">
-        <h2>Step 2: Overview</h2>
-        <p>Explore the key concepts that power our project:</p>
-        <ul>
-            <li>Arduino Development</li>
-            <li>Music-Related Use Cases</li>
-            <li>MIDI (Musical Instrument Digital Interface)</li>
-            <li>Digital Audio</li>
-            <li>Analog Hall Effect Sensors</li>
-            <li>Multiplexers</li>
-        </ul>
-        <p>Uncover how these elements blend to create musical magic.</p>
-    </section>
+    <div id="portfolio">
+        <!-- ... (Rest of your HTML content here) ... -->
+    </div>
 
-    <section id="components">
-        <h2>Step 3: Components</h2>
-        <p>Meet the heroes of our story:</p>
-        <ul>
-            <li>Sensors</li>
-            <li>Arduino Uno</li>
-            <li>Multiplexers</li>
-            <li>Electronic Matrix Board</li>
-            <li>Personal Computer (PC)</li>
-        </ul>
-        <p>Each one plays a crucial role in crafting melodies.</p>
-    </section>
+    <div id="contact">
+        <!-- ... (Rest of your HTML content here) ... -->
+    </div>
 
-    <section id="architecture">
-        <h2>Step 4: High-Level Architecture</h2>
-        <p>Get a backstage pass to our high-tech setup. The heart of our system includes:</p>
-        <ul>
-            <li>Arduino Uno Microcontroller</li>
-            <li>Sixteen-Channel Multiplexer</li>
-            <li>Hall Effect Sensors</li>
-        </ul>
-        <p>See how these components harmonize to create musical wonders.</p>
-    </section>
-
-    <section id="diagram">
-        <h2>Step 5: Detailed Diagram</h2>
-        <p>Visualize the intricate connections between our components. Dive deep into our electrical circuitry and uncover the secrets of sound synthesis.</p>
-    </section>
-
-    <section id="keypress">
-        <h2>Step 6: Key Press Detection</h2>
-        <p>Witness the magic behind the scenes as physical key presses are captured and transformed into digital signals using Hall Effect Sensors. It's a dance of magnets and music.</p>
-    </section>
-
-    <section id="algorithm">
-        <h2>Step 7: Algorithm Overview</h2>
-        <p>Peek behind the curtain at our ingenious algorithm. Discover how we orchestrate MIDI functionality, turning your accordion into a digital symphony orchestra.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Accordion MIDI Transformation</p>
+    <footer class="text-center">
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <span>&copy; 2023 Accordion MIDI Transformation</span>
     </footer>
 
     <!-- Music AI Elements -->
     <div id="music-ai-elements">
-        <img src="sound_wave.png" alt="Sound Wave" style="top: 20%; left: 10%; width: 30%;">
-        <img src="musical_notes.png" alt="Musical Notes" style="top: 50%; left: 60%; width: 20%;">
+        <img src="sound_wave.png" alt="Sound Wave">
+        <img src="musical_notes.png" alt="Musical Notes">
     </div>
 
-    <!-- JavaScript for Parallax Effect -->
     <script>
+        // JavaScript for Music AI Elements
         window.addEventListener('scroll', function () {
             const scrollTop = window.scrollY;
             const musicAIEl = document.getElementById('music-ai-elements');
             musicAIEl.style.transform = `translateY(-${scrollTop}px)`;
         });
+
+        // Copyright Year Update
+        window.addEventListener('DOMContentLoaded', function () {
+            var year = new Date().getFullYear();
+            var copyrightSpan = document.querySelector('.copyright-date');
+            if (copyrightSpan) {
+                copyrightSpan.textContent = year;
+            }
+        });
     </script>
 </body>
-
 </html>

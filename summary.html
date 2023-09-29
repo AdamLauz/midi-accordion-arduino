@@ -17,7 +17,7 @@
 
     /* Header Styles */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('your-background-image.jpg');
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
       background-size: cover;
       background-position: center;
       height: 100vh;
@@ -69,23 +69,31 @@
     }
 
     /* Animation Styles */
-    @keyframes rotate {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
     .ai-icon {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: #FF6D00;
+      border-radius: 50%;
       animation: rotate 10s linear infinite;
     }
 
     .music-icon {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      border-radius: 50%;
       animation: rotate 8s linear infinite reverse;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
@@ -93,8 +101,8 @@
   <header>
     <h1>Accordion MIDI Transformation</h1>
     <p>Your Journey to Musical Innovation</p>
-    <img src="ai-icon.png" alt="AI Icon" class="ai-icon">
-    <img src="music-icon.png" alt="Music Icon" class="music-icon">
+    <div class="ai-icon"></div>
+    <div class="music-icon"></div>
   </header>
 
   <div class="accordion">

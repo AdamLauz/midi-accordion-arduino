@@ -4,76 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accordion MIDI Transformation</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <style>
-    /* Paste your CSS code here */
+    /* General Styles */
     body {
-      font-size: 16px;
-      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #222;
+      color: #fff;
+      overflow: hidden;
     }
 
-    /* ... (rest of your CSS) ... */
+    /* Header Styles */
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* Accordion Styles */
+    .accordion {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    .accordion h2 {
+      color: #FF6D00;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .accordion p {
+      display: none;
+      color: #fff;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Animation Styles */
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .ai-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: rotate 10s linear infinite;
+    }
+
+    .music-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      animation: rotate 8s linear infinite reverse;
+    }
   </style>
 </head>
 <body>
-  <div class="header-section">
-    <!-- Navbar and header content here (from your template) -->
-  </div>
-  <div class="container" id="accordion-content">
+  <header>
     <h1>Accordion MIDI Transformation</h1>
     <p>Your Journey to Musical Innovation</p>
+    <img src="ai-icon.png" alt="AI Icon" class="ai-icon">
+    <img src="music-icon.png" alt="Music Icon" class="music-icon">
+  </header>
 
-    <!-- Step 1: Introduction -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#step1">Step 1: Introduction</a>
-        </h4>
-      </div>
-      <div id="step1" class="panel-collapse collapse">
-        <div class="panel-body">
-          Embrace the fusion of tradition and technology as we embark on a musical adventure. Discover how an ordinary acoustic accordion becomes a digital symphony.
-        </div>
-      </div>
-    </div>
-
-    <!-- Step 2: Overview -->
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" href="#step2">Step 2: Overview</a>
-        </h4>
-      </div>
-      <div id="step2" class="panel-collapse collapse">
-        <div class="panel-body">
-          Explore the key concepts that power our project:
-          <ul>
-            <li>Arduino Development</li>
-            <li>Music-Related Use Cases</li>
-            <li>MIDI (Musical Instrument Digital Interface)</li>
-            <li>Digital Audio</li>
-            <li>Analog Hall Effect Sensors</li>
-            <li>Multiplexers</li>
-          </ul>
-          Uncover how these elements blend to create musical magic.
-        </div>
-      </div>
-    </div>
-
-    <!-- Repeat similar panels for the other steps -->
-    
+  <div class="accordion">
+    <h2>Step 1: Introduction</h2>
+    <p>Embrace the fusion of tradition and technology as we embark on a musical adventure. Discover how an ordinary acoustic accordion becomes a digital symphony.</p>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    // Paste your JavaScript code here
-    $(function(){
-      var year = new Date().getFullYear();
-      $(".copyright-date").text(year);
-    });
-  </script>
+  <div class="accordion">
+    <h2>Step 2: Overview</h2>
+    <p>Explore the key concepts that power our project:</p>
+    <ul>
+      <li>Arduino Development</li>
+      <li>Music-Related Use Cases</li>
+      <li>MIDI (Musical Instrument Digital Interface)</li>
+      <li>Digital Audio</li>
+      <li>Analog Hall Effect Sensors</li>
+      <li>Multiplexers</li>
+    </ul>
+    <p>Uncover how these elements blend to create musical magic.</p>
+  </div>
+
+  <!-- Repeat similar accordions for the other steps -->
+
+  <footer>
+    <p>&copy; 2023 Accordion MIDI Transformation</p>
+  </footer>
 </body>
 </html>

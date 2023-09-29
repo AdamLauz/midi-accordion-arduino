@@ -1,96 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accordion MIDI Transformation</title>
-    <style>
-        /* CSS Styles */
-        body {
-            font-size: 16px;
-            line-height: 1.5;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion MIDI Transformation</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style>
+    /* Paste your CSS code here */
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+    }
 
-        /* ... (Rest of your CSS styles here) ... */
-
-        /* Music AI Elements */
-        #music-ai-elements {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        #music-ai-elements img {
-            position: absolute;
-            opacity: 0.6;
-            animation: float 5s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-    </style>
+    /* ... (rest of your CSS) ... */
+  </style>
 </head>
 <body>
-    <div class="header-section">
-        <!-- ... (Rest of your HTML content here) ... -->
-    </div>
+  <div class="header-section">
+    <!-- Navbar and header content here (from your template) -->
+  </div>
+  <div class="container" id="accordion-content">
+    <h1>Accordion MIDI Transformation</h1>
+    <p>Your Journey to Musical Innovation</p>
 
-    <div id="about">
-        <!-- ... (Rest of your HTML content here) ... -->
-    </div>
-
-    <div id="portfolio">
-        <!-- ... (Rest of your HTML content here) ... -->
-    </div>
-
-    <div id="contact">
-        <!-- ... (Rest of your HTML content here) ... -->
-    </div>
-
-    <footer class="text-center">
-        <div class="footer-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Step 1: Introduction -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#step1">Step 1: Introduction</a>
+        </h4>
+      </div>
+      <div id="step1" class="panel-collapse collapse">
+        <div class="panel-body">
+          Embrace the fusion of tradition and technology as we embark on a musical adventure. Discover how an ordinary acoustic accordion becomes a digital symphony.
         </div>
-        <span>&copy; 2023 Accordion MIDI Transformation</span>
-    </footer>
-
-    <!-- Music AI Elements -->
-    <div id="music-ai-elements">
-        <img src="sound_wave.png" alt="Sound Wave">
-        <img src="musical_notes.png" alt="Musical Notes">
+      </div>
     </div>
 
-    <script>
-        // JavaScript for Music AI Elements
-        window.addEventListener('scroll', function () {
-            const scrollTop = window.scrollY;
-            const musicAIEl = document.getElementById('music-ai-elements');
-            musicAIEl.style.transform = `translateY(-${scrollTop}px)`;
-        });
+    <!-- Step 2: Overview -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#step2">Step 2: Overview</a>
+        </h4>
+      </div>
+      <div id="step2" class="panel-collapse collapse">
+        <div class="panel-body">
+          Explore the key concepts that power our project:
+          <ul>
+            <li>Arduino Development</li>
+            <li>Music-Related Use Cases</li>
+            <li>MIDI (Musical Instrument Digital Interface)</li>
+            <li>Digital Audio</li>
+            <li>Analog Hall Effect Sensors</li>
+            <li>Multiplexers</li>
+          </ul>
+          Uncover how these elements blend to create musical magic.
+        </div>
+      </div>
+    </div>
 
-        // Copyright Year Update
-        window.addEventListener('DOMContentLoaded', function () {
-            var year = new Date().getFullYear();
-            var copyrightSpan = document.querySelector('.copyright-date');
-            if (copyrightSpan) {
-                copyrightSpan.textContent = year;
-            }
-        });
-    </script>
+    <!-- Repeat similar panels for the other steps -->
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    // Paste your JavaScript code here
+    $(function(){
+      var year = new Date().getFullYear();
+      $(".copyright-date").text(year);
+    });
+  </script>
 </body>
 </html>

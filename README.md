@@ -14,6 +14,9 @@ c. 3 X 16-channel analog-to-digital multiplexers (CD74HC4067) to manage the sens
 d. An electronic matrix board to securely hold and interconnect the sensors.
 e. A personal computer (PC) utilized as a sound module to process and produce the desired audio output.
 
+## Video Demo
+([https://www.youtube.com/watch?v=Hc79sDi3f0U](https://youtu.be/Xd6MMoPNxCA?si=6vpV0rM6OJRO2Qn8) "Midi for Accordion with Arduino - Demo")
+
 ## High level Architecture
 The core of this system is centered around the Arduino Uno microcontroller, the sixteen-channel multiplexer, and the Hall effect sensors, as illustrated in the following Figure:
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/d865fcbd-199e-4894-ba15-5409a9702363)

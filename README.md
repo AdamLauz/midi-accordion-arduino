@@ -8,11 +8,11 @@ The primary objective of this endeavor is the conversion of a traditional acoust
 
 The essential components employed in this project include:
 
-1. Sensors: A total of 40 Hall effect sensors (specifically, 49E analog sensors) and 40 miniature magnets.
-2. 1 X Arduino Uno microcontroller with a USB cable for interfacing and control.
-3. 3 X 16-channel analog-to-digital multiplexers (CD74HC4067) to manage the sensor inputs efficiently.
-4. An electronic matrix board to securely hold and interconnect the sensors.
-5. A personal computer (PC) utilized as a sound module to process and produce the desired audio output.
+a. Sensors: A total of 40 Hall effect sensors (specifically, 49E analog sensors) and 40 miniature magnets.
+b. 1 X Arduino Uno microcontroller with a USB cable for interfacing and control.
+c. 3 X 16-channel analog-to-digital multiplexers (CD74HC4067) to manage the sensor inputs efficiently.
+d. An electronic matrix board to securely hold and interconnect the sensors.
+e. A personal computer (PC) utilized as a sound module to process and produce the desired audio output.
 
 ## High level Architecture
 The core of this system is centered around the Arduino Uno microcontroller, the sixteen-channel multiplexer, and the Hall effect sensors, as illustrated in the following Figure:
@@ -26,7 +26,7 @@ The schematic diagram outlines the connections and interactions between the vari
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/bd13a7b5-b2c5-4770-aa57-bf71b5b0081e)
 
 ## How key press is captured?
-Figure 2 serves to elucidate the method by which physical key presses on the accordion are captured and translated into digital signals. The linear-analog Hall effect sensors, such as the 49E model, produce signals of varying strength in response to the proximity of magnets.
+The following Figure serves to elucidate the method by which physical key presses on the accordion are captured and translated into digital signals. The linear-analog Hall effect sensors, such as the 49E model, produce signals of varying strength in response to the proximity of magnets.
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/ef4312c2-cfd3-40a3-ba5d-7bec7b19ba32)
 
 

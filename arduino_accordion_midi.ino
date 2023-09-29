@@ -1,8 +1,5 @@
 #include <MIDI.h>
-//Barometer BME280
 #include <Wire.h>
-//#include <Adafruit_Sensor.h>
-//#include <Adafruit_BME280.h>
 
 MIDI_CREATE_DEFAULT_INSTANCE();
 
@@ -24,13 +21,6 @@ int bassChannel = 2;   //MIDI channel, from 1-16
 int chordChannel = 3;   //MIDI channel, from 1-16
 
 int Expression_CC_Number = 11;//11 = Expression
-//#define SEALEVELPRESSURE_HPA (1013.25)
-//Adafruit_BME280 bme;
-
-//pressure variables
-//double Calib_Pressure, Pressure;
-//int Pressure_Delta;
-
 int prev_velocity = 127;
 int curr_velocity = 127;
 int velocity = 127;
@@ -56,7 +46,6 @@ int Muxes_States_init[num_of_mux][MUX_size] = {
   {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 //  {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 };
-
 
 
 int Muxes_States[num_of_mux][MUX_size] = {
@@ -114,61 +103,6 @@ void setup() {
 void loop() {
   updateMuxes();
   sendMidi(); 
-//  if(millis() - lastRefreshTime >= REFRESH_INTERVAL)
-//  {
-//    lastRefreshTime += REFRESH_INTERVAL;
-//    init_halleffects(3);
-//  }
-//  //Serial.println("SENSOR VALUES: ");
-//  for (int i = 0; i < num_of_mux; i ++) {
-//    for (int j = 0; j < MUX_size; j++) {
-//      int muxij_state = Muxes_States[i][j];
-//      if (j == MUX_size - 1 && i == num_of_mux - 1) { 
-//        Serial.println(muxij_state);
-//      }
-//      else {
-//        Serial.print(muxij_state);
-//        Serial.print(",");
-//      }
-//    }
-//  }
-//  Serial.println(analogRead(pin_In_Muxes[2]));
-  
-//    Serial.println("ON: ");
-//    for(int i = 0; i < num_of_mux; i ++) {
-//      for(int j = 0; j < MUX_size; j++){
-//        int muxij_state = Muxes_States_ON[i][j];
-//        if(j == MUX_size - 1){
-//          Serial.println(muxij_state);
-//        }
-//        else{
-//          Serial.print(muxij_state);
-//          Serial.print(",");
-//        }
-//      }
-//    }
-  
-//    Serial.println("OFF: ");
-//    for(int i = 0; i < num_of_mux; i ++) {
-//      for(int j = 0; j < MUX_size; j++){
-//        int muxij_state = Muxes_States_OFF[i][j];
-//        if(j == MUX_size - 1){
-//          Serial.println(muxij_state);
-//        }
-//        else{
-//          Serial.print(muxij_state);
-//          Serial.print(",");
-//        }
-//      }
-//    }
-  //tests - to remove later....
-  //Serial.print("Pressure = ");
-  //Serial.print(bme.readPressure() / 100.0F);
-  //Serial.println("hPa");
-  //Serial.print("Velocity = ");
-  //int midi_velocity = velocity_bv();
-  //Serial.println(midi_velocity);
-  //delay(1000);
 }
 
 
@@ -186,15 +120,11 @@ void sendMidi() {
       if (Muxes_States_ON[j][i] == HIGH) {
         //note on
         noteOn(getChannel(j, i), getMidiNumber(MUXNotes[j][i]), velocity_bv());
-//        Serial.print("ON: ");
-//        Serial.println(MUXNotes[j][i]);
       }
       else {
         //note off
         if (Muxes_States_OFF[j][i] == HIGH) {
           noteOff(getChannel(j, i), getMidiNumber(MUXNotes[j][i]), velocity_bv());
-//          Serial.print("OFF: ");
-//          Serial.println(MUXNotes[j][i]);
         }
       }
       if (muxij_state > 100) {
@@ -234,16 +164,11 @@ int getChannel(int mux_num, int pin_num) {
 // Fourth parameter is the velocity (64 = normal, 127 = fastest).
 
 void noteOn(byte channel, byte pitch, byte velocity) {
-  //midiEventPacket_t noteOn = {0x09, 0x90 | channel, pitch, velocity};
-  //MidiUSB.sendMIDI(noteOn);
   MIDI.sendNoteOn(pitch, velocity, channel);
 
 }
 
 void noteOff(byte channel, byte pitch, byte velocity) {
-  //midiEventPacket_t noteOff = {0x08, 0x80 | channel, pitch, velocity};
-  //MidiUSB.sendMIDI(noteOff);
-
   MIDI.sendNoteOff(pitch, velocity, channel);
 }
 
@@ -253,8 +178,6 @@ void noteOff(byte channel, byte pitch, byte velocity) {
 // Fourth parameter is the control value (0-127).
 
 void controlChange(byte channel, byte control, byte value) {
-  //  midiEventPacket_t event = {0x0B, 0xB0 | channel, control, value};
-  //  MidiUSB.sendMIDI(event);
   MIDI.sendControlChange(control, value, channel);
 
 }
@@ -291,25 +214,6 @@ void init_halleffects(int times) {
   }
 }
 
-void init_BMP() {
-//  // Initialize and calibrate the sensor
-//  if (bme.begin(0x76))//()
-//  {
-//    //get an average reading
-//    for (int i = 0; i < 32; i++) {
-//      Calib_Pressure += bme.readPressure();
-//      delayMicroseconds(500);
-//    }
-//    Calib_Pressure = Calib_Pressure / 32;
-//  }
-//  else //something went wrong - this is usually a connection problem
-//  {
-//    Serial.println("Could not find a valid BME280 sensor, check wiring!");
-//    while (1);
-//  }
-//  //reset_flags();
-}
-
 void updateMuxes () {
   for (int i = 0; i < MUX_size; i ++) {
     digitalWrite(pin_Out_S0, HIGH && (i & B00000001));
@@ -339,27 +243,9 @@ void updateMuxes () {
 }
 
 int velocity_bv() {
-//  int pressure_low_limit = 10;//default=10
-//  int pressure_high_limit = 120;//default=120
-//
-//  Pressure = readPressure(); //bme.readPressure();
-//  Pressure_Delta = Pressure - Calib_Pressure;
-//  Pressure_Delta = abs(Pressure_Delta);
-//
-//  if (Pressure_Delta <= pressure_low_limit) {
-//    velocity = 0;
-//  }
-//  else {
-//    velocity = map(Pressure_Delta, pressure_low_limit, pressure_high_limit, 0, 127);
-//    if (velocity > 127) {
-//      velocity = 127;
-//    }
-//  }
-//  return velocity + 90;
   return 100.0 + random(10);
 }
 
 double readPressure() {
-  //return bme.readPressure();
   return 100.0 + random(10);
 }

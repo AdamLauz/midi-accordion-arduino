@@ -29,6 +29,8 @@ The schematic diagram outlines the connections and interactions between the vari
 The following Figure serves to elucidate the method by which physical key presses on the accordion are captured and translated into digital signals. The linear-analog Hall effect sensors, such as the 49E model, produce signals of varying strength in response to the proximity of magnets.
 ![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/ef4312c2-cfd3-40a3-ba5d-7bec7b19ba32)
 
+![image](https://github.com/AdamLauz/midi-accordion-arduino/assets/2620814/09099b09-044c-41ea-83ff-e44c25de0262)
+
 
 ## Pictures
 Included below are visual representations of the project, providing a comprehensive view of the implemented system and its components.
